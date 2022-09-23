@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
                 },
                 child: Text('MARKET 3'),
               ),
-              _MyButton(),
+              //_MyButton(),
             ],
           )),
     );
