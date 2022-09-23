@@ -16,6 +16,7 @@ class _Accent extends State<Accent> {
       //body: Center(
       //child: Text('Accent Page'),
       //)
+<<<<<<< HEAD
       body: GridView.count(
         crossAxisCount: 2,
         children: List.generate(100, (index) {
@@ -26,11 +27,46 @@ class _Accent extends State<Accent> {
             ),
           );
         }),
+=======
+      body: new ListView(
+        children: [
+          Card(
+              child: ListTile(
+                  //title: Text("Accent Item 1"),
+                  title: Text(
+                      "Checking out if the long sentence is correctly writting on."))),
+          Card(
+            child: ListTile(
+              title: Text("List Item 2"),
+            ),
+          ),
+          Card(
+              child: ListTile(
+            title: Text("List Item 3"),
+          )),
+          Card(
+              child: ListTile(
+            title: Text("List Item 4"),
+          )),
+          Card(
+              child: ListTile(
+            title: Text("List Item 5"),
+          )),
+        ],
+        shrinkWrap: true,
+        /*padding: const EdgeInsets.all(20.0),
+          children: List.generate(choices.length, (index) {
+            return Center(
+              child: ChoiceCard(choice: choices[index], item: choices[index]),
+            );
+          })*/
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
       ),
     );
   }
 }
 /*
+<<<<<<< HEAD
 import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
@@ -40,6 +76,163 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const title = 'Grid List';
+=======
+class Choice {
+  const Choice({required this.title, required this.icon});
+  final String title;
+  final IconData icon;
+}
+
+const List<Choice> choices = const <Choice>[
+  const Choice(
+      title:
+          'This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car.',
+      icon: Icons.directions_car),
+  const Choice(
+      title:
+          'This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle. This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle. This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle.',
+      icon: Icons.directions_bike),
+  const Choice(
+      title: 'This is a Boat, because its a Boat. So, it\'s a Boat',
+      icon: Icons.directions_boat),
+  const Choice(
+      title: 'This is a Bus, because its a Bus. So, it\'s a Bus',
+      icon: Icons.directions_bus),
+  const Choice(
+      title: 'This is a Train, because its a Train. So, it\'s a Train',
+      icon: Icons.directions_railway),
+  const Choice(
+      title: 'This is a Walk, because its a Walk. So, it\'s a Walk',
+      icon: Icons.directions_walk),
+  const Choice(
+      title:
+          'This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car.',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Car, because its a car. So, it\'s a car',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle',
+      icon: Icons.directions_bike),
+  const Choice(
+      title: 'This is a Boat, because its a Boat. So, it\'s a Boat',
+      icon: Icons.directions_boat),
+  const Choice(
+      title: 'This is a Bus, because its a Bus. So, it\'s a Bus',
+      icon: Icons.directions_bus),
+  const Choice(
+      title: 'This is a Train, because its a Train. So, it\'s a Train',
+      icon: Icons.directions_railway),
+  const Choice(
+      title: 'This is a Walk, because its a Walk. So, it\'s a Walk',
+      icon: Icons.directions_walk),
+  const Choice(
+      title:
+          'This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car.',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Car, because its a car. So, it\'s a car',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle',
+      icon: Icons.directions_bike),
+  const Choice(
+      title: 'This is a Boat, because its a Boat. So, it\'s a Boat',
+      icon: Icons.directions_boat),
+  const Choice(
+      title: 'This is a Bus, because its a Bus. So, it\'s a Bus',
+      icon: Icons.directions_bus),
+  const Choice(
+      title:
+          'This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car.',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Train, because its a Train. So, it\'s a Train',
+      icon: Icons.directions_railway),
+  const Choice(
+      title: 'This is a Walk, because its a Walk. So, it\'s a Walk',
+      icon: Icons.directions_walk),
+  const Choice(
+      title: 'This is a Car, because its a car. So, it\'s a car',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle',
+      icon: Icons.directions_bike),
+  const Choice(
+      title: 'This is a Boat, because its a Boat. So, it\'s a Boat',
+      icon: Icons.directions_boat),
+  const Choice(
+      title: 'This is a Bus, because its a Bus. So, it\'s a Bus',
+      icon: Icons.directions_bus),
+  const Choice(
+      title: 'This is a Train, because its a Train. So, it\'s a Train',
+      icon: Icons.directions_railway),
+  const Choice(
+      title: 'This is a Walk, because its a Walk. So, it\'s a Walk',
+      icon: Icons.directions_walk),
+];
+
+class ChoiceCard extends StatelessWidget {
+  const ChoiceCard(
+      {required Key key,
+      required this.choice,
+      required this.onTap,
+      required this.item,
+      this.selected: false})
+      : super(key: key);
+  final Choice choice;
+  final VoidCallback onTap;
+  final Choice item;
+  final bool selected;
+  @override
+  Widget build(BuildContext context) {
+    TextStyle? textStyle = Theme.of(context).textTheme.headline4;
+    //if (selected)
+    //textStyle = textStyle(color: Colors.lightGreenAccent[400]);
+    return Card(
+        color: Colors.white,
+        child: Row(
+          children: <Widget>[
+            new Container(
+                padding: const EdgeInsets.all(8.0),
+                alignment: Alignment.topLeft,
+                child: Icon(
+                  choice.icon,
+                  size: 80.0,
+                  color: textStyle?.color,
+                )),
+            new Expanded(
+                child: new Container(
+              padding: const EdgeInsets.all(10.0),
+              alignment: Alignment.topLeft,
+              child: Text(
+                choice.title,
+                style: null,
+                textAlign: TextAlign.left,
+                maxLines: 5,
+              ),
+            )),
+          ],
+          crossAxisAlignment: CrossAxisAlignment.start,
+        ));
+  }
+}
+*/
+/*
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    const title = 'Grid List';
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
     return MaterialApp(
       title: title,
       home: Scaffold(
@@ -64,10 +257,21 @@ class MyApp extends StatelessWidget {
 */
 /*
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   static const String _title = 'Flutter Code Sample';
+=======
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  static const String _title = 'Flutter Code Sample';
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -76,30 +280,57 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+<<<<<<< HEAD
 class ListTileSelectExample extends StatefulWidget {
   const ListTileSelectExample({super.key});
   @override
   ListTileSelectExampleState createState() => ListTileSelectExampleState();
 }
+=======
+
+class ListTileSelectExample extends StatefulWidget {
+  const ListTileSelectExample({super.key});
+
+  @override
+  ListTileSelectExampleState createState() => ListTileSelectExampleState();
+}
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class ListTileSelectExampleState extends State<ListTileSelectExample> {
   bool isSelectionMode = false;
   final int listLength = 30;
   late List<bool> _selected;
   bool _selectAll = false;
   bool _isGridMode = false;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   void initState() {
     super.initState();
     initializeSelection();
   }
+<<<<<<< HEAD
   void initializeSelection() {
     _selected = List<bool>.generate(listLength, (_) => false);
   }
+=======
+
+  void initializeSelection() {
+    _selected = List<bool>.generate(listLength, (_) => false);
+  }
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   void dispose() {
     _selected.clear();
     super.dispose();
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -178,6 +409,10 @@ class ListTileSelectExampleState extends State<ListTileSelectExample> {
               ));
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class GridBuilder extends StatefulWidget {
   const GridBuilder({
     super.key,
@@ -185,12 +420,24 @@ class GridBuilder extends StatefulWidget {
     required this.isSelectionMode,
     required this.onSelectionChange,
   });
+<<<<<<< HEAD
   final bool isSelectionMode;
   final Function(bool)? onSelectionChange;
   final List<bool> selectedList;
   @override
   GridBuilderState createState() => GridBuilderState();
 }
+=======
+
+  final bool isSelectionMode;
+  final Function(bool)? onSelectionChange;
+  final List<bool> selectedList;
+
+  @override
+  GridBuilderState createState() => GridBuilderState();
+}
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class GridBuilderState extends State<GridBuilder> {
   void _toggle(int index) {
     if (widget.isSelectionMode) {
@@ -199,6 +446,10 @@ class GridBuilderState extends State<GridBuilder> {
       });
     }
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -228,6 +479,10 @@ class GridBuilderState extends State<GridBuilder> {
         });
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class ListBuilder extends StatefulWidget {
   const ListBuilder({
     super.key,
@@ -235,12 +490,24 @@ class ListBuilder extends StatefulWidget {
     required this.isSelectionMode,
     required this.onSelectionChange,
   });
+<<<<<<< HEAD
   final bool isSelectionMode;
   final List<bool> selectedList;
   final Function(bool)? onSelectionChange;
   @override
   State<ListBuilder> createState() => _ListBuilderState();
 }
+=======
+
+  final bool isSelectionMode;
+  final List<bool> selectedList;
+  final Function(bool)? onSelectionChange;
+
+  @override
+  State<ListBuilder> createState() => _ListBuilderState();
+}
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class _ListBuilderState extends State<ListBuilder> {
   void _toggle(int index) {
     if (widget.isSelectionMode) {
@@ -249,6 +516,10 @@ class _ListBuilderState extends State<ListBuilder> {
       });
     }
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -274,4 +545,8 @@ class _ListBuilderState extends State<ListBuilder> {
         });
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
  */
