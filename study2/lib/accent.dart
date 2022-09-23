@@ -16,20 +16,184 @@ class _Accent extends State<Accent> {
       //body: Center(
       //child: Text('Accent Page'),
       //)
-      body: GridView.count(
-        crossAxisCount: 2,
-        children: List.generate(100, (index) {
-          return Center(
-            child: Text(
-              'Item $index',
-              style: Theme.of(context).textTheme.headline5,
+      body: new ListView(
+        children: [
+          Card(
+              child: ListTile(
+                  //title: Text("Accent Item 1"),
+                  title: Text(
+                      "Checking out if the long sentence is correctly writting on."))),
+          Card(
+            child: ListTile(
+              title: Text("List Item 2"),
             ),
-          );
-        }),
+          ),
+          Card(
+              child: ListTile(
+            title: Text("List Item 3"),
+          )),
+          Card(
+              child: ListTile(
+            title: Text("List Item 4"),
+          )),
+          Card(
+              child: ListTile(
+            title: Text("List Item 5"),
+          )),
+        ],
+        shrinkWrap: true,
+        /*padding: const EdgeInsets.all(20.0),
+          children: List.generate(choices.length, (index) {
+            return Center(
+              child: ChoiceCard(choice: choices[index], item: choices[index]),
+            );
+          })*/
       ),
     );
   }
 }
+/*
+class Choice {
+  const Choice({required this.title, required this.icon});
+  final String title;
+  final IconData icon;
+}
+
+const List<Choice> choices = const <Choice>[
+  const Choice(
+      title:
+          'This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car.',
+      icon: Icons.directions_car),
+  const Choice(
+      title:
+          'This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle. This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle. This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle.',
+      icon: Icons.directions_bike),
+  const Choice(
+      title: 'This is a Boat, because its a Boat. So, it\'s a Boat',
+      icon: Icons.directions_boat),
+  const Choice(
+      title: 'This is a Bus, because its a Bus. So, it\'s a Bus',
+      icon: Icons.directions_bus),
+  const Choice(
+      title: 'This is a Train, because its a Train. So, it\'s a Train',
+      icon: Icons.directions_railway),
+  const Choice(
+      title: 'This is a Walk, because its a Walk. So, it\'s a Walk',
+      icon: Icons.directions_walk),
+  const Choice(
+      title:
+          'This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car.',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Car, because its a car. So, it\'s a car',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle',
+      icon: Icons.directions_bike),
+  const Choice(
+      title: 'This is a Boat, because its a Boat. So, it\'s a Boat',
+      icon: Icons.directions_boat),
+  const Choice(
+      title: 'This is a Bus, because its a Bus. So, it\'s a Bus',
+      icon: Icons.directions_bus),
+  const Choice(
+      title: 'This is a Train, because its a Train. So, it\'s a Train',
+      icon: Icons.directions_railway),
+  const Choice(
+      title: 'This is a Walk, because its a Walk. So, it\'s a Walk',
+      icon: Icons.directions_walk),
+  const Choice(
+      title:
+          'This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car.',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Car, because its a car. So, it\'s a car',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle',
+      icon: Icons.directions_bike),
+  const Choice(
+      title: 'This is a Boat, because its a Boat. So, it\'s a Boat',
+      icon: Icons.directions_boat),
+  const Choice(
+      title: 'This is a Bus, because its a Bus. So, it\'s a Bus',
+      icon: Icons.directions_bus),
+  const Choice(
+      title:
+          'This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car. This is a Car, because its a car. So, it\'s a car.',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Train, because its a Train. So, it\'s a Train',
+      icon: Icons.directions_railway),
+  const Choice(
+      title: 'This is a Walk, because its a Walk. So, it\'s a Walk',
+      icon: Icons.directions_walk),
+  const Choice(
+      title: 'This is a Car, because its a car. So, it\'s a car',
+      icon: Icons.directions_car),
+  const Choice(
+      title: 'This is a Bicycle, because its a Bicycle. So, it\'s a Bicycle',
+      icon: Icons.directions_bike),
+  const Choice(
+      title: 'This is a Boat, because its a Boat. So, it\'s a Boat',
+      icon: Icons.directions_boat),
+  const Choice(
+      title: 'This is a Bus, because its a Bus. So, it\'s a Bus',
+      icon: Icons.directions_bus),
+  const Choice(
+      title: 'This is a Train, because its a Train. So, it\'s a Train',
+      icon: Icons.directions_railway),
+  const Choice(
+      title: 'This is a Walk, because its a Walk. So, it\'s a Walk',
+      icon: Icons.directions_walk),
+];
+
+class ChoiceCard extends StatelessWidget {
+  const ChoiceCard(
+      {required Key key,
+      required this.choice,
+      required this.onTap,
+      required this.item,
+      this.selected: false})
+      : super(key: key);
+  final Choice choice;
+  final VoidCallback onTap;
+  final Choice item;
+  final bool selected;
+  @override
+  Widget build(BuildContext context) {
+    TextStyle? textStyle = Theme.of(context).textTheme.headline4;
+    //if (selected)
+    //textStyle = textStyle(color: Colors.lightGreenAccent[400]);
+    return Card(
+        color: Colors.white,
+        child: Row(
+          children: <Widget>[
+            new Container(
+                padding: const EdgeInsets.all(8.0),
+                alignment: Alignment.topLeft,
+                child: Icon(
+                  choice.icon,
+                  size: 80.0,
+                  color: textStyle?.color,
+                )),
+            new Expanded(
+                child: new Container(
+              padding: const EdgeInsets.all(10.0),
+              alignment: Alignment.topLeft,
+              child: Text(
+                choice.title,
+                style: null,
+                textAlign: TextAlign.left,
+                maxLines: 5,
+              ),
+            )),
+          ],
+          crossAxisAlignment: CrossAxisAlignment.start,
+        ));
+  }
+}
+*/
 /*
 import 'package:flutter/material.dart';
 
