@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
+import 'package:study2/main.dart';
 import 'package:study2/market1.dart';
 import 'package:study2/market2.dart';
 
