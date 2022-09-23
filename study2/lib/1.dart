@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
 import 'package:study2/market1.dart';
+import 'package:study2/market2.dart';
+
+import 'package:study2/market3.dart';
 
 class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -36,7 +39,7 @@ class HomePage extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  print('choosing market 1');
+                  print('market 1');
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const Market1()),
@@ -47,13 +50,21 @@ class HomePage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  print('choosing market 2');
+                  print('market 2');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Market2()),
+                  );
                 },
                 child: Text('MARKET 2'),
               ),
               ElevatedButton(
                 onPressed: () {
-                  print('choosing market 3');
+                  print('market 3');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Market3()),
+                  );
                 },
                 child: Text('MARKET 3'),
               ),
