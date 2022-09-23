@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:study2/accent.dart';
+import 'package:study2/first.dart';
+import 'package:study2/second.dart';
+import 'package:study2/third.dart';
 import 'package:study2/main.dart';
 
 class Market2 extends StatefulWidget {
@@ -10,46 +14,67 @@ class Market2 extends StatefulWidget {
 
 class _Market2 extends State<Market2> {
   int _selectedIndex = 0;
+  List _pages = [First(), Second(), Third(), Accent()];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Market2'),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          backgroundColor: Colors.grey,
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white.withOpacity(.60),
-          selectedFontSize: 14,
-          unselectedFontSize: 14,
-          currentIndex: _selectedIndex, //현재 선택된 Index
-          onTap: (int index) {
-            setState(() {
-              _selectedIndex = index;
-            });
-          },
-          items: [
-            BottomNavigationBarItem(
-              label: 'index 0',
-              icon: Icon(Icons.favorite),
-            ),
-            BottomNavigationBarItem(
-              label: 'index 1',
-              icon: Icon(Icons.music_note),
-            ),
-            BottomNavigationBarItem(
-              label: 'index 2',
-              icon: Icon(Icons.location_on),
-            ),
-            BottomNavigationBarItem(
-              label: 'index 3',
-              icon: Icon(Icons.library_books),
-            ),
-          ],
-        ),
-        body: Center(
-          child: Text('Market 2 Page'),
-        ));
+      appBar: AppBar(
+        title: Text('Market2'),
+      ),
+      body: Center(
+        //child: Text('Market 2 Page'),
+        child: _pages[_selectedIndex], // 페이지와 연결
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.grey,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white.withOpacity(.60),
+        selectedFontSize: 14,
+        unselectedFontSize: 14,
+        currentIndex: _selectedIndex, //현재 선택된 Index
+        onTap: (int index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(
+            label: 'index 0',
+            icon: Icon(Icons.favorite),
+          ),
+          BottomNavigationBarItem(
+            label: 'index 1',
+            icon: Icon(Icons.music_note),
+          ),
+          BottomNavigationBarItem(
+            label: 'index 2',
+            icon: Icon(Icons.location_on),
+          ),
+          BottomNavigationBarItem(
+            label: 'index 3', icon: Icon(Icons.library_books),
+            //onTap: () {
+            //print('Accent');
+            //Navigator.push(
+            //context,
+            //MaterialPageRoute(builder: (context) => const Accent()),
+            //);
+            //Navigator.pop(context);
+            //},
+          ),
+        ],
+      ),
+      //body: Center(
+      // child: Text('Market 2 Page'),
+      //)
+    );
+  }
+
+  void _onItemTapped(int index) {
+    // state 갱신
+    setState(() {
+      _selectedIndex = index; // index는 item 순서로 0, 1, 2로 구성
+    });
   }
 }
