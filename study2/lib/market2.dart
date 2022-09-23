@@ -5,6 +5,7 @@ import 'package:study2/first.dart';
 import 'package:study2/second.dart';
 import 'package:study2/third.dart';
 import 'package:study2/main.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class Market2 extends StatefulWidget {
   const Market2({Key? key}) : super(key: key);
@@ -13,6 +14,14 @@ class Market2 extends StatefulWidget {
 }
 
 class _Market2 extends State<Market2> {
+  late GoogleMapController mapController;
+
+  final LatLng _center = const LatLng(35.8761838, 128.6052677); //칠성시장
+
+  void _onMapCreated(GoogleMapController controller) {
+    mapController = controller;
+  }
+
   int _selectedIndex = 0;
   List _pages = [First(), Second(), Third(), Accent()];
 
@@ -22,10 +31,33 @@ class _Market2 extends State<Market2> {
       appBar: AppBar(
         title: Text('Market2'),
       ),
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      body: GoogleMap(
+        onMapCreated: _onMapCreated,
+        initialCameraPosition: CameraPosition(
+          target: _center,
+          zoom: 11.0,
+        ),
+      ),
+
+=======
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
       body: Center(
         //child: Text('Market 2 Page'),
         child: _pages[_selectedIndex], // 페이지와 연결
       ),
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.grey,

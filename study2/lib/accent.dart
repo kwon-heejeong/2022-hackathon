@@ -16,6 +16,24 @@ class _Accent extends State<Accent> {
       //body: Center(
       //child: Text('Accent Page'),
       //)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      body: GridView.count(
+        crossAxisCount: 2,
+        children: List.generate(100, (index) {
+          return Center(
+            child: Text(
+              'Item $index',
+              style: Theme.of(context).textTheme.headline5,
+            ),
+          );
+        }),
+=======
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
       body: new ListView(
         children: [
           Card(
@@ -48,11 +66,35 @@ class _Accent extends State<Accent> {
               child: ChoiceCard(choice: choices[index], item: choices[index]),
             );
           })*/
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
       ),
     );
   }
 }
 /*
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+import 'package:flutter/material.dart';
+void main() {
+  runApp(const MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    const title = 'Grid List';
+=======
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class Choice {
   const Choice({required this.title, required this.icon});
   final String title;
@@ -208,6 +250,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     const title = 'Grid List';
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
     return MaterialApp(
       title: title,
       home: Scaffold(
@@ -232,6 +281,18 @@ class MyApp extends StatelessWidget {
 */
 /*
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+void main() => runApp(const MyApp());
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  static const String _title = 'Flutter Code Sample';
+=======
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 
 void main() => runApp(const MyApp());
 
@@ -240,6 +301,13 @@ class MyApp extends StatelessWidget {
 
   static const String _title = 'Flutter Code Sample';
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -248,6 +316,19 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+class ListTileSelectExample extends StatefulWidget {
+  const ListTileSelectExample({super.key});
+  @override
+  ListTileSelectExampleState createState() => ListTileSelectExampleState();
+}
+=======
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 
 class ListTileSelectExample extends StatefulWidget {
   const ListTileSelectExample({super.key});
@@ -256,29 +337,76 @@ class ListTileSelectExample extends StatefulWidget {
   ListTileSelectExampleState createState() => ListTileSelectExampleState();
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class ListTileSelectExampleState extends State<ListTileSelectExample> {
   bool isSelectionMode = false;
   final int listLength = 30;
   late List<bool> _selected;
   bool _selectAll = false;
   bool _isGridMode = false;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   void initState() {
     super.initState();
     initializeSelection();
   }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  void initializeSelection() {
+    _selected = List<bool>.generate(listLength, (_) => false);
+  }
+=======
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 
   void initializeSelection() {
     _selected = List<bool>.generate(listLength, (_) => false);
   }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   void dispose() {
     _selected.clear();
     super.dispose();
   }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -357,7 +485,18 @@ class ListTileSelectExampleState extends State<ListTileSelectExample> {
               ));
   }
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class GridBuilder extends StatefulWidget {
   const GridBuilder({
     super.key,
@@ -365,6 +504,20 @@ class GridBuilder extends StatefulWidget {
     required this.isSelectionMode,
     required this.onSelectionChange,
   });
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  final bool isSelectionMode;
+  final Function(bool)? onSelectionChange;
+  final List<bool> selectedList;
+  @override
+  GridBuilderState createState() => GridBuilderState();
+}
+=======
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 
   final bool isSelectionMode;
   final Function(bool)? onSelectionChange;
@@ -374,6 +527,13 @@ class GridBuilder extends StatefulWidget {
   GridBuilderState createState() => GridBuilderState();
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class GridBuilderState extends State<GridBuilder> {
   void _toggle(int index) {
     if (widget.isSelectionMode) {
@@ -382,7 +542,18 @@ class GridBuilderState extends State<GridBuilder> {
       });
     }
   }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -412,7 +583,18 @@ class GridBuilderState extends State<GridBuilder> {
         });
   }
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class ListBuilder extends StatefulWidget {
   const ListBuilder({
     super.key,
@@ -420,6 +602,20 @@ class ListBuilder extends StatefulWidget {
     required this.isSelectionMode,
     required this.onSelectionChange,
   });
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  final bool isSelectionMode;
+  final List<bool> selectedList;
+  final Function(bool)? onSelectionChange;
+  @override
+  State<ListBuilder> createState() => _ListBuilderState();
+}
+=======
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 
   final bool isSelectionMode;
   final List<bool> selectedList;
@@ -429,6 +625,13 @@ class ListBuilder extends StatefulWidget {
   State<ListBuilder> createState() => _ListBuilderState();
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
 class _ListBuilderState extends State<ListBuilder> {
   void _toggle(int index) {
     if (widget.isSelectionMode) {
@@ -437,7 +640,18 @@ class _ListBuilderState extends State<ListBuilder> {
       });
     }
   }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -463,5 +677,16 @@ class _ListBuilderState extends State<ListBuilder> {
         });
   }
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+=======
+
+>>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
  */
