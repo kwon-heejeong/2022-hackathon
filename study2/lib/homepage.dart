@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
@@ -9,10 +10,11 @@ import 'package:study2/market3.dart';
 
 class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
+    final name = tr('main_title');
     return Scaffold(
       appBar: AppBar(
         //leading: Icon(Icon.menu),
-        title: Text("Daegu Market App"),
+        title: Text(tr('main_title')),
         //actions: [
         //Icon(Icon.search),
         //],
@@ -40,34 +42,34 @@ class HomePage extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  print('market 1');
+                  print('market_1');
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const Market1()),
                   );
                   //Navigator.pop(context);
                 },
-                child: Text('MARKET 1'),
+                child: Text(tr('Market 1')),
               ),
               ElevatedButton(
                 onPressed: () {
-                  print('market 2');
+                  print('market_2');
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const Market2()),
                   );
                 },
-                child: Text('MARKET 2'),
+                child: Text(tr('Market 2')),
               ),
               ElevatedButton(
                 onPressed: () {
-                  print('market 3');
+                  print('market_3');
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const Market3()),
                   );
                 },
-                child: Text('MARKET 3'),
+                child: Text(tr('Market_3')),
               ),
               //_MyButton(),
             ],

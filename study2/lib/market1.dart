@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:study2/main.dart';
@@ -14,7 +15,7 @@ class _Market1 extends State<Market1> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Market1'),
+          title: Text(tr('Market_1')),
         ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
@@ -31,25 +32,25 @@ class _Market1 extends State<Market1> {
           },
           items: [
             BottomNavigationBarItem(
-              label: 'index 0',
+              label: tr('index 0'),
               icon: Icon(Icons.favorite),
             ),
             BottomNavigationBarItem(
-              label: 'index 1',
+              label: tr('index 1'),
               icon: Icon(Icons.music_note),
             ),
             BottomNavigationBarItem(
-              label: 'index 2',
+              label: tr('index 2'),
               icon: Icon(Icons.location_on),
             ),
             BottomNavigationBarItem(
-              label: 'index 3',
+              label: tr('index 3'),
               icon: Icon(Icons.library_books),
             ),
           ],
         ),
         body: Center(
-          child: Text('Market 1 Page'),
+          child: Text(tr('Market_1')),
         ));
   }
 }

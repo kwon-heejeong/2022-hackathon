@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:study2/accent.dart';
@@ -24,13 +25,13 @@ class _Market2 extends State<Market2> {
   //}
 
   int _selectedIndex = 0;
-  List _pages = [Map2(), Second(), Third(), Accent()];
+  List _pages = [Map2(), Marketfood2(), Third(), Accent()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Market2'),
+        title: Text(tr('Market_2')),
       ),
 
       body: Center(
@@ -53,19 +54,20 @@ class _Market2 extends State<Market2> {
         },
         items: [
           BottomNavigationBarItem(
-            label: 'index 0',
+            label: tr('index 0'),
             icon: Icon(Icons.favorite),
           ),
           BottomNavigationBarItem(
-            label: 'index 1',
+            label: tr('index 1'),
             icon: Icon(Icons.music_note),
           ),
           BottomNavigationBarItem(
-            label: 'index 2',
+            label: tr('index 2'),
             icon: Icon(Icons.location_on),
           ),
           BottomNavigationBarItem(
-            label: 'index 3', icon: Icon(Icons.library_books),
+            label: tr('index 3'),
+            icon: Icon(Icons.library_books),
             //onTap: () {
             //print('Accent');
             //Navigator.push(

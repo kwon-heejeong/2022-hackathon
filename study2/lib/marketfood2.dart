@@ -7,14 +7,14 @@ import 'package:study2/second.dart';
 import 'package:study2/third.dart';
 import 'package:study2/main.dart';
 
-class Map2 extends StatefulWidget {
-  const Map2({Key? key}) : super(key: key);
+class Marketfood2 extends StatefulWidget {
+  const Marketfood2({Key? key}) : super(key: key);
 
   @override
-  _Map2 createState() => _Map2();
+  _Marketfood2 createState() => _Marketfood2();
 }
 
-class _Map2 extends State<Map2> {
+class _Marketfood2 extends State<Marketfood2> {
   late GoogleMapController mapController;
   List<Marker> _markers = [];
 
