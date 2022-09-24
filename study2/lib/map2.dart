@@ -53,7 +53,7 @@ class _Map2 extends State<Map2> {
           markers: Set.from(_markers),
           initialCameraPosition: CameraPosition(
             target: _center,
-            zoom: 30.0,
+            zoom: 20.0,
           ),
         ),
       ),

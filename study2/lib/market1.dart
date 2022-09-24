@@ -31,7 +31,7 @@ class _Market1 extends State<Market1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('market_2'.tr()),
+        title: Text('market_1'.tr()),
       ),
 
       body: Center(

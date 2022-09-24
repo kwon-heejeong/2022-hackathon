@@ -106,7 +106,7 @@ class _Marketfood2 extends State<Marketfood2> {
               markers: Set.from(_markers),
               initialCameraPosition: CameraPosition(
                 target: _center,
-                zoom: 30.0,
+                zoom: 20.0,
               ),
             ),
             Padding(

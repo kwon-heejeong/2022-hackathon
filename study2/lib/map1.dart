@@ -18,7 +18,8 @@ class _Map1 extends State<Map1> {
   late GoogleMapController mapController;
   List<Marker> _markers = [];
 
-  final LatLng _center = const LatLng(35.876655, 128.604625); //
+  final LatLng _center =
+      const LatLng(35.8688497, 128.5807879); //35.8688497!4d128.5807879
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
@@ -44,16 +45,16 @@ class _Map1 extends State<Map1> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
+        /*appBar: AppBar(
           title: const Text('Market2'),
           backgroundColor: Colors.green[700],
-        ),
+        ),*/
         body: GoogleMap(
           onMapCreated: _onMapCreated,
           markers: Set.from(_markers),
           initialCameraPosition: CameraPosition(
             target: _center,
-            zoom: 30.0,
+            zoom: 16.0,
           ),
         ),
       ),
