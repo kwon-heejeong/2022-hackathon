@@ -18,7 +18,7 @@ class _Map2 extends State<Map2> {
   late GoogleMapController mapController;
   List<Marker> _markers = [];
 
-  final LatLng _center = const LatLng(35.876655, 128.604625); //
+  final LatLng _center = const LatLng(35.835960, 128.558076); //관문시장
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
@@ -27,9 +27,9 @@ class _Map2 extends State<Map2> {
   void initState() {
     super.initState();
     _markers.add(Marker(
-        markerId: MarkerId("Market2"),
+        markerId: MarkerId("Market3"),
         draggable: true,
-        position: LatLng(35.876655, 128.604625)));
+        position: LatLng(35.835960, 128.558076)));
   }
 
   @override

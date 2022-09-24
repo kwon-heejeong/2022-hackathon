@@ -7,18 +7,18 @@ import 'package:study2/second.dart';
 import 'package:study2/third.dart';
 import 'package:study2/main.dart';
 
-class Marketfood2Halal extends StatefulWidget {
-  const Marketfood2Halal({Key? key}) : super(key: key);
+class Marketfood3Halal extends StatefulWidget {
+  const Marketfood3Halal({Key? key}) : super(key: key);
 
   @override
-  _Marketfood2Halal createState() => _Marketfood2Halal();
+  _Marketfood3Halal createState() => _Marketfood3Halal();
 }
 
-class _Marketfood2Halal extends State<Marketfood2Halal> {
+class _Marketfood3Halal extends State<Marketfood3Halal> {
   late GoogleMapController mapController;
   List<Marker> _markers = [];
 
-  final LatLng _center = const LatLng(35.876655, 128.604625); //
+  final LatLng _center = const LatLng(35.835960, 128.558076); //
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
@@ -27,81 +27,69 @@ class _Marketfood2Halal extends State<Marketfood2Halal> {
   void initState() {
     super.initState();
     _markers.add(Marker(
-      markerId: MarkerId("정화네 하우스"),
+      markerId: MarkerId("짜리몽땅김밥"),
       draggable: true,
-      position: LatLng(35.8762155, 128.6038172),
+      position: LatLng(35.8357323, 128.5580507),
       infoWindow: InfoWindow(
         //popup info
-        title: 'Jeong-hwa Restaurant',
-        snippet: 'Jeong-hwane hauseu',
+        title: 'Jjajangmongtang Gimbap',
+        snippet: 'Jjalimongttang-gimbab',
       ),
       icon: BitmapDescriptor.defaultMarkerWithHue(
           BitmapDescriptor.hueViolet), //Icon for Marker
     ));
     _markers.add(Marker(
-      markerId: MarkerId("칠성식당"),
+      markerId: MarkerId("뚱보식당"),
       draggable: true,
-      position: LatLng(35.8751854, 128.6035277),
+      position: LatLng(35.8701007, 128.5815749),
       infoWindow: InfoWindow(
         //popup info
-        title: 'Chilsung Restaurant',
-        snippet: 'Chilseong sigdang',
+        title: 'Ttung-bo Restaurant',
+        snippet: 'Ttung-bo sigdang',
       ),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueViolet),
     ));
     _markers.add(Marker(
-      markerId: MarkerId("순한우곰탕"),
+      markerId: MarkerId("밀밭식당"),
       draggable: true,
-      position: LatLng(35.8759985, 128.6025088),
+      position: LatLng(35.835357, 128.5581289),
       infoWindow: InfoWindow(
         //popup info
-        title: 'Pure Korean Beef Soup',
-        snippet: 'Sunhan-u gomtang',
+        title: 'Milbat Restaurant',
+        snippet: 'Milbat sigdang',
       ),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueViolet),
     ));
     _markers.add(Marker(
-      markerId: MarkerId("일번지야채만두"),
+      markerId: MarkerId("마니아치킨"),
       draggable: true,
-      position: LatLng(35.8748122, 128.6045275),
+      position: LatLng(35.8374027, 128.5603094),
       infoWindow: InfoWindow(
         //popup info
-        title: 'Ilbeongji Vegetable Dumplings',
-        snippet: 'Ilbeon-ji ya-chae mandu',
+        title: 'Mania Chicken',
+        snippet: 'Mania Chicken',
       ),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueViolet),
     ));
     _markers.add(Marker(
-      markerId: MarkerId("길수제비"),
+      markerId: MarkerId("꼬꼬통닭식당"),
       draggable: true,
-      position: LatLng(35.8759124, 128.6053978),
+      position: LatLng(35.8352878, 128.557482),
       infoWindow: InfoWindow(
         //popup info
-        title: 'Gilsu swallow',
-        snippet: 'Gilsu-jebi
-',
+        title: 'Coco Chicken Restaurant',
+        snippet: 'Kkokko tong-dalg sigdang',
       ),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueViolet),
     ));
     _markers.add(Marker(
-      markerId: MarkerId("갈릭버터새우"),
+      markerId: MarkerId("대백식당"),
       draggable: true,
-      position: LatLng(35.8761194, 128.6051875),
+      position: LatLng(35.8355885, 128.5571741),
       infoWindow: InfoWindow(
         //popup info
-        title: 'Garlic Butter Shrimp',
-        snippet: 'Gallig beoteo saeu',
-      ),
-      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueViolet),
-    ));
-    _markers.add(Marker(
-      markerId: MarkerId("365국시마을"),
-      draggable: true,
-      position: LatLng(35.8758015, 128.6052652),
-      infoWindow: InfoWindow(
-        //popup info
-        title: '365 Guk Village',
-        snippet: '365gugsima-eul',
+        title: 'Daebaek Restaurant',
+        snippet: 'Dae-baeg sigdang',
       ),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueViolet),
     ));
@@ -112,7 +100,7 @@ class _Marketfood2Halal extends State<Marketfood2Halal> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Chilsung Market Halal Food'),
+          title: const Text('Gwanmun Market Halal Food'),
           backgroundColor: Colors.green[700],
         ),
         body: GoogleMap(

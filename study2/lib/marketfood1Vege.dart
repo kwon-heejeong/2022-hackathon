@@ -111,7 +111,7 @@ class _Marketfood1Vege extends State<Marketfood1Vege> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Seomun Market Vegetarian'),
+          title: const Text('Seomun Market Vegetarian Food'),
           backgroundColor: Colors.green[700],
         ),
         body: GoogleMap(

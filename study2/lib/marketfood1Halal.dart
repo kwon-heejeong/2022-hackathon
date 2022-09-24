@@ -111,7 +111,7 @@ class _Marketfood1Halal extends State<Marketfood1Halal> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Seomun Market Halal'),
+          title: const Text('Seomun Market Halal Food'),
           backgroundColor: Colors.green[700],
         ),
         body: GoogleMap(
