@@ -1,11 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:study2/accent.dart';
+import 'package:study2/accent2.dart';
 import 'package:study2/first.dart';
 import 'package:study2/map2.dart';
 import 'package:study2/marketfood2.dart';
-import 'package:study2/third.dart';
+import 'package:study2/third2.dart';
 import 'package:study2/main.dart';
 //import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -25,7 +25,7 @@ class _Market2 extends State<Market2> {
   //}
 
   int _selectedIndex = 0;
-  List _pages = [Map2(), Marketfood2(), Third(), Accent()];
+  List _pages = [Map2(), Marketfood2(), Third2(), Accent2()];
 
   @override
   Widget build(BuildContext context) {

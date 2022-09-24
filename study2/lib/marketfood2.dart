@@ -2,10 +2,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:study2/accent.dart';
+import 'package:study2/accent2.dart';
 import 'package:study2/first.dart';
 import 'package:study2/marketfood2.dart';
-import 'package:study2/third.dart';
+import 'package:study2/third2.dart';
 import 'package:study2/main.dart';
 
 class Marketfood2 extends StatefulWidget {
