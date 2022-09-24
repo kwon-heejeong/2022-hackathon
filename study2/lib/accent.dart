@@ -16,10 +16,8 @@ class _Accent extends State<Accent> {
       //body: Center(
       //child: Text('Accent Page'),
       //)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      body: GridView.count(
+
+      /*body: GridView.count(
         crossAxisCount: 2,
         children: List.generate(100, (index) {
           return Center(
@@ -29,11 +27,7 @@ class _Accent extends State<Accent> {
             ),
           );
         }),
-=======
-=======
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
-=======
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+*/
       body: new ListView(
         children: [
           Card(
@@ -66,13 +60,6 @@ class _Accent extends State<Accent> {
               child: ChoiceCard(choice: choices[index], item: choices[index]),
             );
           })*/
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
-=======
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
-=======
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
       ),
     );
   }
