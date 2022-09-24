@@ -25,7 +25,7 @@ class _Accent extends State<Accent> {
                       "Checking out if the long sentence is correctly writting on."))),
           Card(
             child: ListTile(
-              title: Text("List Item 2"),
+              title: Text("I want to buy this :\nE-guh Ju-E-so"),
             ),
           ),
           Card(
