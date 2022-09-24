@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:study2/accent.dart';
 import 'package:study2/first.dart';
 import 'package:study2/map2.dart';
-import 'package:study2/second.dart';
+import 'package:study2/marketfood2.dart';
 import 'package:study2/third.dart';
 import 'package:study2/main.dart';
 //import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -31,7 +31,7 @@ class _Market2 extends State<Market2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(tr('Market_2')),
+        title: Text('market_2'.tr()),
       ),
 
       body: Center(
@@ -54,19 +54,19 @@ class _Market2 extends State<Market2> {
         },
         items: [
           BottomNavigationBarItem(
-            label: tr('index 0'),
+            label: 'index_0'.tr(),
             icon: Icon(Icons.favorite),
           ),
           BottomNavigationBarItem(
-            label: tr('index 1'),
+            label: 'index_1'.tr(),
             icon: Icon(Icons.music_note),
           ),
           BottomNavigationBarItem(
-            label: tr('index 2'),
+            label: 'index_2'.tr(),
             icon: Icon(Icons.location_on),
           ),
           BottomNavigationBarItem(
-            label: tr('index 3'),
+            label: 'index_3'.tr(),
             icon: Icon(Icons.library_books),
             //onTap: () {
             //print('Accent');

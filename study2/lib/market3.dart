@@ -15,7 +15,7 @@ class _Market3 extends State<Market3> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(tr('Market_3')),
+          title: Text('market_3'.tr()),
         ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
@@ -32,25 +32,25 @@ class _Market3 extends State<Market3> {
           },
           items: [
             BottomNavigationBarItem(
-              label: tr('index 0'),
+              label: 'index_0'.tr(),
               icon: Icon(Icons.favorite),
             ),
             BottomNavigationBarItem(
-              label: tr('index 1'),
+              label: 'index_1'.tr(),
               icon: Icon(Icons.music_note),
             ),
             BottomNavigationBarItem(
-              label: tr('index 2'),
+              label: 'index_2'.tr(),
               icon: Icon(Icons.location_on),
             ),
             BottomNavigationBarItem(
-              label: tr('index 3'),
+              label: 'index_3'.tr(),
               icon: Icon(Icons.library_books),
             ),
           ],
         ),
         body: Center(
-          child: Text(tr('Market_3')),
+          child: Text('market_3'.tr()),
         ));
   }
 }

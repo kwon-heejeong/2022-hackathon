@@ -1,9 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:study2/accent.dart';
 import 'package:study2/first.dart';
-import 'package:study2/second.dart';
+import 'package:study2/marketfood2.dart';
 import 'package:study2/third.dart';
 import 'package:study2/main.dart';
 
@@ -27,17 +28,36 @@ class _Marketfood2 extends State<Marketfood2> {
   void initState() {
     super.initState();
     _markers.add(Marker(
-        markerId: MarkerId("정화네 하우스"),
-        draggable: true,
-        position: LatLng(35.8762155, 128.6038172)));
+      markerId: MarkerId("정화네 하우스"),
+      draggable: true,
+      position: LatLng(35.8762155, 128.6038172),
+      infoWindow: InfoWindow(
+        //popup info
+        title: '정화네 하우스 ',
+      ),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+          BitmapDescriptor.hueViolet), //Icon for Marker
+    ));
     _markers.add(Marker(
-        markerId: MarkerId("칠성식당"),
-        draggable: true,
-        position: LatLng(35.8751854, 128.6035277)));
+      markerId: MarkerId("칠성식당"),
+      draggable: true,
+      position: LatLng(35.8751854, 128.6035277),
+      infoWindow: InfoWindow(
+        //popup info
+        title: '칠성식당',
+      ),
+      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueViolet),
+    ));
     _markers.add(Marker(
-        markerId: MarkerId("순한우곰탕"),
-        draggable: true,
-        position: LatLng(35.8759985, 128.6025088)));
+      markerId: MarkerId("순한우곰탕"),
+      draggable: true,
+      position: LatLng(35.8759985, 128.6025088),
+      infoWindow: InfoWindow(
+        //popup info
+        title: '순한우곰탕',
+      ),
+      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueViolet),
+    ));
   }
 
   @override
@@ -45,7 +65,7 @@ class _Marketfood2 extends State<Marketfood2> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Market2'),
+          title: Text('market_2'.tr()),
           backgroundColor: Colors.green[700],
         ),
         body: GoogleMap(

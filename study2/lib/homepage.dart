@@ -10,11 +10,11 @@ import 'package:study2/market3.dart';
 
 class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
-    final name = tr('main_title');
+    final name = 'main_title'.tr();
     return Scaffold(
       appBar: AppBar(
         //leading: Icon(Icon.menu),
-        title: Text(tr('main_title')),
+        title: Text('main_title'.tr()),
         //actions: [
         //Icon(Icon.search),
         //],
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
                   );
                   //Navigator.pop(context);
                 },
-                child: Text(tr('Market 1')),
+                child: Text('market_1'.tr()),
               ),
               ElevatedButton(
                 onPressed: () {
@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const Market2()),
                   );
                 },
-                child: Text(tr('Market 2')),
+                child: Text('market_2'.tr()),
               ),
               ElevatedButton(
                 onPressed: () {
@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const Market3()),
                   );
                 },
-                child: Text(tr('Market_3')),
+                child: Text('market_3'.tr()),
               ),
               //_MyButton(),
             ],

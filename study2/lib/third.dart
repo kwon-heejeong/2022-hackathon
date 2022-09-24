@@ -7,6 +7,7 @@ import 'package:flutter/foundation.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart'
     show QRView, QRViewController, QrScannerOverlayShape;
 import 'package:study2/qr_check_screen.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Third extends StatefulWidget {
   const Third({Key? key}) : super(key: key);
@@ -24,6 +25,16 @@ class _Third extends State<Third> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            ElevatedButton(
+                onPressed: () async {
+                  const url = "https://ko.qr-code-generator.com/";
+                  if (await canLaunch(url)) {
+                    await launch(url);
+                  } else {
+                    throw 'Could not launch $url';
+                  }
+                },
+                child: new Text("hi")),
             Text(
               '여기에 링크가 뜨게 됩니다.',
             ),
