@@ -31,9 +31,6 @@ class _Market2 extends State<Market2> {
       appBar: AppBar(
         title: Text('Market2'),
       ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       body: GoogleMap(
         onMapCreated: _onMapCreated,
         initialCameraPosition: CameraPosition(
@@ -42,22 +39,10 @@ class _Market2 extends State<Market2> {
         ),
       ),
 
-=======
-=======
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
-=======
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
-      body: Center(
+      /*body: Center(
         //child: Text('Market 2 Page'),
         child: _pages[_selectedIndex], // 페이지와 연결
-      ),
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
-=======
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
-=======
->>>>>>> 9b46ce6abcba0ab248bf33b251eda88a167afb34
+      ),*/
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.grey,
