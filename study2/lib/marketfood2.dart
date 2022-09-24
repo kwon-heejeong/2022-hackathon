@@ -60,6 +60,29 @@ class _Marketfood2 extends State<Marketfood2> {
     ));
   }
 
+  /*void _onMapTypeButtonPressed() {
+    setState(() {
+      _currentMapType = _currentMapType == MapType.normal
+          ? MapType.satellite
+          : MapType.normal;
+      print("dddd" + _currentMapType.toString());
+    });
+  }
+
+  void _onAddMarkerButtonPressed() {
+    InfoWindow infoWindow =
+        InfoWindow(title: "Location" + markers.length.toString());
+    Marker marker = Marker(
+      markerId: MarkerId(markers.length.toString()),
+      infoWindow: infoWindow,
+      position: centerPosition,
+      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),
+    );
+    setState(() {
+      markers.add(marker);
+    });
+  }*/
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -68,13 +91,53 @@ class _Marketfood2 extends State<Marketfood2> {
           title: Text('market_2'.tr()),
           backgroundColor: Colors.green[700],
         ),
-        body: GoogleMap(
+        /*body: GoogleMap(
           onMapCreated: _onMapCreated,
           markers: Set.from(_markers),
           initialCameraPosition: CameraPosition(
             target: _center,
             zoom: 30.0,
           ),
+        ),*/
+        body: Stack(
+          children: <Widget>[
+            GoogleMap(
+              onMapCreated: _onMapCreated,
+              markers: Set.from(_markers),
+              initialCameraPosition: CameraPosition(
+                target: _center,
+                zoom: 30.0,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Align(
+                alignment: Alignment.bottomLeft,
+                child: new FloatingActionButton(
+                  //onPressed: _onMapTypeButtonPressed,
+                  onPressed: () {},
+                  child: new Icon(
+                    Icons.map,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: new FloatingActionButton(
+                  //onPressed: _onAddMarkerButtonPressed,
+                  onPressed: () {},
+                  child: new Icon(
+                    Icons.edit_location,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
