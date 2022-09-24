@@ -47,7 +47,12 @@ class _QRCheckScreenState extends State<QRCheckScreen> {
   }
 
   void _onQRViewCreated(QRViewController controller) {
-    this.controller = controller;
+    setState(() {
+      this.controller = controller;
+    });
+
+    controller.resumeCamera();
+
     controller.scannedDataStream.listen((event) {
       print('QRCheckScreen_onQRViewCreated.listen : result=${event.code}');
 

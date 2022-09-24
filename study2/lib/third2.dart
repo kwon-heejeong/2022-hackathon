@@ -92,9 +92,6 @@ class _Third2 extends State<Third2> {
                 },
                 child: new Text("seafood market")),
             Text(
-              '여기에 링크가 뜨게 됩니다.',
-            ),
-            Text(
               qrResult,
               style: Theme.of(context).textTheme.bodyText2,
             ),
