@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:study2/main.dart';
+import 'package:powerful_daegu/main.dart';
 
 class Third extends StatefulWidget {
   const Third({Key? key}) : super(key: key);
