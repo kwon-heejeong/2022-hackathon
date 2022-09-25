@@ -1,5 +1,5 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
 import 'package:powerful_daegu/main.dart';
 import 'package:powerful_daegu/market1.dart';
@@ -8,10 +8,11 @@ import 'package:powerful_daegu/market3.dart';
 
 class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
+    final name = 'main_title'.tr();
     return Scaffold(
       appBar: AppBar(
         //leading: Icon(Icon.menu),
-        title: Text("Daegu Market App"),
+        title: Text('main_title'.tr()),
         //actions: [
         //Icon(Icon.search),
         //],
@@ -39,34 +40,34 @@ class HomePage extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  print('market 1');
+                  print('market_1');
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const Market1()),
                   );
                   //Navigator.pop(context);
                 },
-                child: Text('MARKET 1'),
+                child: Text('market_1'.tr()),
               ),
               ElevatedButton(
                 onPressed: () {
-                  print('market 2');
+                  print('market_2');
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const Market2()),
                   );
                 },
-                child: Text('MARKET 2'),
+                child: Text('market_2'.tr()),
               ),
               ElevatedButton(
                 onPressed: () {
-                  print('market 3');
+                  print('market_3');
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const Market3()),
                   );
                 },
-                child: Text('MARKET 3'),
+                child: Text('market_3'.tr()),
               ),
               //_MyButton(),
             ],

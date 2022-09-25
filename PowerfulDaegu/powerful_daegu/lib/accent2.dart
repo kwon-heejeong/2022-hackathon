@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:powerful_daegu/main.dart';
 
-class Accent1 extends StatefulWidget {
-  const Accent1({Key? key}) : super(key: key);
+class Accent2 extends StatefulWidget {
+  const Accent2({Key? key}) : super(key: key);
   @override
-  _Accent1 createState() => _Accent1();
+  _Accent2 createState() => _Accent2();
 }
 
-class _Accent1 extends State<Accent1> {
+class _Accent2 extends State<Accent2> {
   int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
