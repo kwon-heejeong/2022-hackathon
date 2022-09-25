@@ -21,7 +21,7 @@
     * GPS를 활용함으로써, 팜플렛 내 지도보다 정확한 위치 파악 가능 및 편리함. 
     * 외국인 관광 효과가 증대됨으로써, 대구 시장의 상권 활성화.
 * 프로젝트에 활용된 기술 (3가지 이내)
-  * Flutter 프레임워크 활용 / Dart 툴 사용 / Google Map API연동 / QR코드 인식 및 생성 / 여러 리스트를 받아 Google Map 마크 찍기
+  * Flutter 프레임워크 활용 / Dart 언어 사용 / Google Map API연동 / QR코드 인식 및 생성 / 여러 리스트를 받아 Google Map 마크 찍기
 * 시연 영상
   * 유튜브 링크 : https://youtu.be/ubsMjL7y9YE
   * 타임 스템프 작성 :
