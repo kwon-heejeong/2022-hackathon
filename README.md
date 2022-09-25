@@ -24,7 +24,7 @@
   * Flutter 프레임워크 활용 / Dart 언어 사용 / Google Map API연동 / QR코드 인식 및 생성 / 여러 리스트를 받아 Google Map 마크 찍기
 * 시연 영상
   * 유튜브 링크 : https://youtu.be/ubsMjL7y9YE
-  * 타임 스템프 작성 :
+  * 타임 스탬프 작성 :
 ```sh
 00:00 시작
 00:02 어플 시작 페이지
