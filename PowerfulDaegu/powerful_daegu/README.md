@@ -1,6 +1,5 @@
 # powerful_daegu
-
-A new Flutter project.
+'외국인을 위한 대구 전통시장 안내 및 탐방 서비스' 최종 파일입니다.
 
 ## Getting Started
 
