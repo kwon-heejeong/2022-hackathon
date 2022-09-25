@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:powerful_daegu/accent3.dart';
+import 'package:powerful_daegu/third3.dart';
 import 'package:powerful_daegu/main.dart';
 
-class Map1 extends StatefulWidget {
-  const Map1({Key? key}) : super(key: key);
+class Map3 extends StatefulWidget {
+  const Map3({Key? key}) : super(key: key);
 
   @override
-  _Map1 createState() => _Map1();
+  _Map3 createState() => _Map3();
 }
 
-class _Map1 extends State<Map1> {
+class _Map3 extends State<Map3> {
   late GoogleMapController mapController;
   List<Marker> _markers = [];
 
-  final LatLng _center = const LatLng(35.8696024, 128.5819201); //
+  final LatLng _center = const LatLng(35.835960, 128.558076); //관문시장
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
@@ -23,9 +25,9 @@ class _Map1 extends State<Map1> {
   void initState() {
     super.initState();
     _markers.add(Marker(
-        markerId: MarkerId("Market1"),
+        markerId: MarkerId("Market3"),
         draggable: true,
-        position: LatLng(35.8696024, 128.5819201)));
+        position: LatLng(35.835960, 128.558076)));
   }
 
   @override
@@ -37,7 +39,7 @@ class _Map1 extends State<Map1> {
           markers: Set.from(_markers),
           initialCameraPosition: CameraPosition(
             target: _center,
-            zoom: 15.0,
+            zoom: 17.0,
           ),
         ),
       ),

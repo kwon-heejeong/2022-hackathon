@@ -1,12 +1,13 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:powerful_daegu/accent1.dart';
-import 'package:powerful_daegu/first.dart';
-import 'package:powerful_daegu/second.dart';
-import 'package:powerful_daegu/third.dart';
+import 'package:powerful_daegu/map1.dart';
+import 'package:powerful_daegu/marketfood1.dart';
+import 'package:powerful_daegu/third1.dart';
 import 'package:powerful_daegu/main.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+//import 'package:google_maps_flutter/google_maps_flutter.dart';
 class Market1 extends StatefulWidget {
   const Market1({Key? key}) : super(key: key);
   @override
@@ -14,35 +15,24 @@ class Market1 extends StatefulWidget {
 }
 
 class _Market1 extends State<Market1> {
-  late GoogleMapController mapController;
-
-  final LatLng _center = const LatLng(35.869394, 128.580801); //칠성시장
-
-  void _onMapCreated(GoogleMapController controller) {
-    mapController = controller;
-  }
-
+  //late GoogleMapController mapController;
+  //final LatLng _center = const LatLng(35.8761838, 128.6052677); //칠성시장
+  //void _onMapCreated(GoogleMapController controller) {
+  //  mapController = controller;
+  //}
   int _selectedIndex = 0;
-  List _pages = [First(), Second(), Third(), Accent1()];
-
+  List _pages = [Map1(), Marketfood1(), Third1(), Accent1()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Market1'),
-      ),
-      body: GoogleMap(
-        onMapCreated: _onMapCreated,
-        initialCameraPosition: CameraPosition(
-          target: _center,
-          zoom: 11.0,
-        ),
+        title: Text('market_1'.tr()),
       ),
 
-      /*body: Center(
+      body: Center(
         //child: Text('Market 2 Page'),
         child: _pages[_selectedIndex], // 페이지와 연결
-      ),*/
+      ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.grey,
@@ -58,19 +48,20 @@ class _Market1 extends State<Market1> {
         },
         items: [
           BottomNavigationBarItem(
-            label: 'index 0',
+            label: 'index_0'.tr(),
             icon: Icon(Icons.favorite),
           ),
           BottomNavigationBarItem(
-            label: 'index 1',
+            label: 'index_1'.tr(),
             icon: Icon(Icons.music_note),
           ),
           BottomNavigationBarItem(
-            label: 'index 2',
+            label: 'index_2'.tr(),
             icon: Icon(Icons.location_on),
           ),
           BottomNavigationBarItem(
-            label: 'index 3', icon: Icon(Icons.library_books),
+            label: 'index_3'.tr(),
+            icon: Icon(Icons.library_books),
             //onTap: () {
             //print('Accent');
             //Navigator.push(
