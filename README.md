@@ -1,6 +1,6 @@
 ## 2022 대구를 빛내는 SW해커톤
 
-# 깃허브 최종 파일은 PowerfulDaegu/powerful_daegu에 들어있습니다.
+# 깃허브 최종 파일은 'PowerfulDaegu/powerful_daegu'에 들어있습니다.
 
 * 팀명
   * ‘상쓰리’
