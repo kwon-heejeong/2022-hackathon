@@ -1,8 +1,5 @@
 # powerful_daegu
 '외국인을 위한 대구 전통시장 안내 및 탐방 서비스' 최종 파일입니다.
 
-## Getting Started
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 사용 언어 및 실행 방법
+Vscode에서 Flutter 언어를 사용했고, 안드로이드 에뮬레이터와 삼성 usb 디버깅을 통해 실행했습니다.
